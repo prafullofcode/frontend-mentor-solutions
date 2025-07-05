@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <header class="top-section">
+        <figure class="logo-container">
+          <img src="./images/logo.svg" alt="ping logo" srcset="" />
+        </figure>
+      </header>
+      <section class="hero">
+        <p class="hero-title">We are launching <span>soon!</span></p>
+        <p class="sub-text">Subscribe and get notified</p>
+
+        <form action="#" aria-label="Subscription form" class="email-form">
+          <input
+            name="email"
+            id="email_input"
+            placeholder="Your email address..."
+            class="email_input"
+          />
+
+          <p class="error-mobile hidden">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please provide a valid email
+            address
+          </p>
+
+          <button type="submit" class="submit-btn" onclick="validateEmail()">
+            Notify Me
+          </button>
+        </form>
+        <p class="error-desktop hidden">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please provide a valid email
+          address
+        </p>
+      </section>
+      <figure class="dashboard-image-container">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="Dashboard illustration"
+          class="dashboard-image"
+        />
+      </figure>
+      <footer>
+        <div class="icons-container">
+          <a href="https://facebook.com" target="_blank">
+            <ion-icon name="logo-facebook" class="icons-individual"></ion-icon>
+          </a>
+          <a href="https://x.com" target="_blank">
+            <ion-icon name="logo-twitter" class="icons-individual"></ion-icon>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <ion-icon name="logo-instagram" class="icons-individual"></ion-icon>
+          </a>
+        </div>
+        <p class="footer-text">&copy; Copyright Ping. All rights reserved</p>
+      </footer>
+    </main>
+    <script src="./js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

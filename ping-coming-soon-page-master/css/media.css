@@ -1,0 +1,56 @@
+@media screen and (min-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 4rem 2rem 4rem;
+  }
+  .hero {
+    align-items: left;
+  }
+  .hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .sub-text {
+    font-size: 1.6rem;
+  }
+  .email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .dashboard-image {
+    max-width: 65rem;
+    max-height: 40rem;
+  }
+
+  footer {
+    gap: 1rem;
+  }
+
+  .icons-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .icons-individual {
+    font-size: 2.5rem;
+    color: var(--blue);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .icons-individual:hover {
+    cursor: pointer;
+    color: hsla(223, 87%, 63%, 0.468);
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+    color: var(--gray);
+  }
+}
