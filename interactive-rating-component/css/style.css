@@ -1,0 +1,151 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+.content-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  max-width: 40rem;
+  padding: 3rem;
+  background: radial-gradient(at top, #232a34, #181e27);
+
+  /* background-color: pink; */
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.icon-container {
+  background-color: var(--dark-blue);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heading {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.paragraph {
+  color: var(--light-grey);
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.rating-area {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.rating-number-container {
+  color: var(--light-grey);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.submit-btn {
+  padding: 1.5rem;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 3rem;
+}
+
+.white-hover-item {
+  transition: ease-out background-color 0.3s;
+  transition: ease-in background-color 0.5s;
+  transform: ease-out font-weight 0.2s;
+}
+.white-hover-item:hover {
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  font-weight: 700;
+}
+
+.thankyou-state-box {
+  align-items: center;
+  gap: 3rem;
+}
+
+.illustration-and-rating-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.selected-rating-showcase-container {
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 300;
+}
+
+.thankyou-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.thankyou-paragraph {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .box {
+    padding: 2rem;
+  }
+}

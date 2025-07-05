@@ -1,0 +1,35 @@
+@media screen and (min-width: 800px) {
+  html {
+    overflow-y: hidden;
+  }
+  .content-wrapper {
+    flex-direction: row;
+  }
+  main {
+    background: url(../images/bg-intro-desktop.png);
+  }
+
+  .input-form {
+    padding: 2rem 3.5rem;
+  }
+
+  .hero-text-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero-text {
+    font-size: 4rem;
+  }
+  .hero-paragraph {
+    line-height: 145%;
+  }
+
+  .inner-container {
+    max-width: 55rem;
+  }
+
+  .terms-of-services-warning {
+    font-size: 1.1rem;
+  }
+}

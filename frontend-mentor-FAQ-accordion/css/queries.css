@@ -1,0 +1,12 @@
+@media only screen and (max-width: 450px) {
+  .box {
+    padding: 3rem 2rem;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+  }
+  .content-wrapper::before {
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+  }
+}

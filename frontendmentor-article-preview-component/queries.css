@@ -1,0 +1,123 @@
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+
+  .author {
+    gap: 1.5rem;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .content-container {
+    padding: 0rem;
+    gap: 0rem;
+  }
+
+  .actual-content {
+    padding: 3rem 2.5rem 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .content-paragraph {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .content-footer-active {
+    background-color: var(--very-Dark-Grayish-Blue);
+  }
+
+  .content-footer {
+    padding: 4rem 3rem;
+    border-radius: 0 0 1rem 1rem;
+    justify-content: left;
+    height: 8rem;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 30rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .active-state-mobile {
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.3s ease-out, transform 0.5s ease-out;
+    z-index: 10;
+  }
+
+  .active-state-mobile.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .flex-temp {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .share-container {
+    margin-left: auto;
+  }
+
+  .share-container-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .share-container-mobile:hover {
+    background-color: whitesmoke;
+  }
+
+  .share-container-mobile:hover .share-icon {
+    color: var(--very-Dark-Grayish-Blue);
+  }
+
+  .active-state-share-popup {
+    display: none;
+  }
+
+  .share-text-mobile {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--grayish-Blue);
+    transition: color 0.3s ease-out;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .share-text-mobile:hover {
+    color: whitesmoke;
+  }
+
+  .share-options-mobile {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .social-media-icons {
+    width: 3rem;
+  }
+
+  .pointed-inverted-triangle {
+    display: none;
+  }
+}

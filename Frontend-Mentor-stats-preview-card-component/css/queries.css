@@ -1,0 +1,70 @@
+@media screen and (max-width: 1100px){
+    html{
+        font-size: 50%;
+    }
+
+    .image-wrapper{
+        width: 50%;
+    }
+}
+
+
+  @media screen and (max-width: 768px) {
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    flex-direction:column-reverse ;
+    margin: 10rem 4rem;
+}
+
+
+.content-wrapper{
+    width: 100%;
+    padding: 4rem;
+}
+
+.main-tagline{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.main-paragraph{
+text-align: center;
+align-self: center;
+}
+.stats-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+}
+.individual-stat{
+  align-items: center;
+}
+
+.stat-type{
+    text-align: center;
+}
+.image-wrapper{
+    width: 100%;
+}
+
+.hero-image-desktop{
+    display: none;  
+  }
+
+    .hero-image-mobile{
+        display: block;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0 ;
+    }
+
+    .image-overlay{
+        border-radius: 1rem 1rem 0 0 ;
+    }
+  
+  }

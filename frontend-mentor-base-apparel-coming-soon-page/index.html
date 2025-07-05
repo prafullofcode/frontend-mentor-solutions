@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <main>
+      <img
+        src="./assets/images/logo.svg"
+        alt="Base Apparel logo"
+        class="logo"
+      />
+
+      <img
+        src="./assets/images/hero-mobile.jpg"
+        alt="Base apparell model image"
+        class="hero-image hero-image-mobile"
+      />
+      <div class="desktop-logo-and-content-wrapper">
+        <div class="desktop-content-container">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Base Apparel logo"
+            class="logo-desktop"
+          />
+
+          <div class="hero-text">
+            <h1>We're</h1>
+            <h1 id="highlight">coming</h1>
+            <h1 id="highlight">soon</h1>
+          </div>
+          <p class="hero-paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <div class="email-input-container">
+            <input
+              type="email"
+              placeholder="Email address"
+              id="email-input-desktop"
+              class="email-input"
+              onkeyup="validateEmail()"
+            />
+            <button onclick="validateOnClick()" class="submit-btn">
+              <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="hero-text">
+          <h1>We're</h1>
+          <h1 id="highlight">coming</h1>
+          <h1 id="highlight">soon</h1>
+        </div>
+        <p class="hero-paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <div class="email-input-container">
+          <input
+            type="email"
+            placeholder="Email address"
+            id="email-input"
+            onkeyup="validateEmail()"
+            class="email-input"
+          />
+
+          <button class="submit-btn" onclick="validateOnClick() ">
+            <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
+          </button>
+        </div>
+      </div>
+
+      <img
+        src="./assets/images/hero-desktop.jpg"
+        alt="Base apparell model image"
+        class="hero-image hero-image-desktop"
+      />
+    </main>
+  </body>
+  <script src="./js/script.js"></script>
+</html>

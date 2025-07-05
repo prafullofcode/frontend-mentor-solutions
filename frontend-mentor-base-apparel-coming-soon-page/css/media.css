@@ -1,0 +1,58 @@
+@media screen and (min-width: 558px) {
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    height: 100vh;
+    gap: 0;
+  }
+
+  .hero-image-mobile,
+  .logo,
+  .content-container {
+    display: none;
+  }
+
+  .hero-image-desktop {
+    display: block;
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .desktop-logo-and-content-wrapper {
+    background-color: hsl(0, 100%, 98%);
+    background: url(../assets/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 5rem;
+    height: 100%;
+    width: 60%;
+    box-sizing: border-box;
+  }
+
+  .logo-desktop {
+    width: 18rem;
+    height: auto;
+    margin-bottom: 15rem;
+  }
+
+  .desktop-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 45rem;
+    padding: 2.5rem;
+  }
+
+  .desktop-content-container .hero-text h1 {
+    font-size: 5rem;
+  }
+}

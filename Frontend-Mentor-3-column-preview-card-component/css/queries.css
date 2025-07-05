@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) {
+   .container{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .vehicle-description{
+    margin-bottom: 2.5rem;
+   }
+
+   .container-items-1{
+    background-color: var(--bright-orange);
+    border-radius: 1rem 1rem 0 0;
+}
+.container-items-3{
+    background-color: var(--bright-orange);
+    border-radius: 0 0 1rem 1rem;
+}
+
+   
+  }

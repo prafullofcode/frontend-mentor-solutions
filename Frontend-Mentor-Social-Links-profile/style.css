@@ -1,0 +1,101 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+:root{
+    --green:hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey_700:hsl(0, 0%, 20%);
+    --grey_800:hsl(0, 0%, 12%);
+    --grey_900: hsl(0, 0%, 8%);
+}
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family: "Inter", serif;
+    background-color: var(--grey_900);
+    
+}
+
+main{
+    background-color: var(--grey_800);
+    max-width: 40rem;
+    margin: 18rem auto 0 auto;
+    padding: 4.5rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+figure{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+figure img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 100%;
+}
+
+
+figure legend{
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+figure address{
+    color: var(--green);
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: normal;
+}
+.user-description-text{
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+
+.social-link-container{
+    height: 4.5rem;
+    background-color: var(--grey_700);
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in 1.5ms all;
+    color: white;
+    font-weight: 700;
+}
+
+.social-link-container:hover{
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--grey_800);
+}
+
+ /*.inter-<uniquifier> {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }

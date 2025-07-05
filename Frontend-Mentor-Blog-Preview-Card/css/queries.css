@@ -1,0 +1,10 @@
+@media screen and (max-width: 480px){
+
+    .container{
+        max-width: 32.7rem;
+    }
+
+    .category,.published-date,.author-name,.blog-description{
+        font-size: 1.4rem;
+    }
+}

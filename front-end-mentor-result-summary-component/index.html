@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/queries.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-container">
+        <div class="card result-card">
+          <div class="title result-card-title">Your Result</div>
+          <div class="result-display">
+            <p class="result-data">76</p>
+            <p class="result-outof">of 100</p>
+          </div>
+          <div class="result-summary-container">
+            <p class="great-text">Great</p>
+            <p class="result-paragraph">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="card summary-card">
+          <div class="title summary-card-title">Summary</div>
+          <div class="data-items-container" id="summary-container"></div>
+
+          <div class="continue-btn">Continue</div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const data = [
+          {
+            category: "Reaction",
+            score: 80,
+            icon: "./assets/images/icon-reaction.svg",
+            bgColor: "var(--light-red-bg)",
+            textColor: "var(--light-red)",
+          },
+          {
+            category: "Memory",
+            score: 92,
+            icon: "./assets/images/icon-memory.svg",
+            bgColor: "var(--orangey-yellow-bg)",
+            textColor: "var(--orangey-yellow)",
+          },
+          {
+            category: "Verbal",
+            score: 61,
+            icon: "./assets/images/icon-verbal.svg",
+            bgColor: "var(--green-teal-bg)",
+            textColor: "var(--green-teal)",
+          },
+          {
+            category: "Visual",
+            score: 72,
+            icon: "./assets/images/icon-visual.svg",
+            bgColor: "var(--cobalt-blue-bg)",
+            textColor: "var(--cobalt-blue)",
+          },
+        ];
+
+        const summaryContainer = document.getElementById("summary-container");
+
+        data.forEach((item) => {
+          const individualDataContainer = document.createElement("div");
+          individualDataContainer.classList.add("individual-data-container");
+
+          individualDataContainer.style.backgroundColor = item.bgColor;
+
+          const iconAndTitleContainer = document.createElement("div");
+          iconAndTitleContainer.classList.add("icon-and-title-container");
+
+          const icon = document.createElement("img");
+          icon.src = item.icon;
+          icon.alt = `${item.category} icon`;
+          iconAndTitleContainer.appendChild(icon);
+
+          const categoryTitle = document.createElement("p");
+          categoryTitle.classList.add("data-item-title");
+          categoryTitle.textContent = item.category;
+          categoryTitle.style.color = item.textColor;
+          iconAndTitleContainer.appendChild(categoryTitle);
+
+          const score = document.createElement("p");
+          score.classList.add("data-item");
+          score.innerHTML = `<span class="score">${item.score}</span> / 100`;
+
+          individualDataContainer.appendChild(iconAndTitleContainer);
+          individualDataContainer.appendChild(score);
+
+          summaryContainer.appendChild(individualDataContainer);
+        });
+      });
+    </script>
+  </body>
+</html>

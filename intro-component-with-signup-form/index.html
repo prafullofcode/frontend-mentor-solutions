@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="content-wrapper">
+        <div class="hero-text-container inner-container">
+          <h1 class="hero-text">
+            Learn to code by
+            <span>watching others</span>
+          </h1>
+          <p class="hero-paragraph">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="form-container inner-container">
+          <div class="offer-container">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </div>
+
+          <form action="#" class="input-form" id="form">
+            <div class="input-box">
+              <input
+                type="text"
+                id="first-name-input"
+                class="input-field"
+                placeholder="First Name"
+              />
+              <div class="error-message" id="fname-error">
+                First name cannot be empty
+              </div>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="last-name-input"
+                class="input-field"
+                placeholder="Last Name"
+              />
+              <div class="error-message" id="lname-error">
+                Last name cannot be empty
+              </div>
+            </div>
+
+            <div class="input-box">
+              <input
+                type="text"
+                id="email-input"
+                class="input-field"
+                placeholder="Email address"
+              />
+              <div class="error-message" id="email-error">
+                Doesn't look like an email
+              </div>
+            </div>
+
+            <div class="input-box">
+              <input
+                type="password"
+                id="password-input"
+                class="input-field"
+                placeholder="Password"
+              />
+              <div class="error-message" id="pw-error">
+                Password cannot be empty
+              </div>
+            </div>
+
+            <button type="submit" class="claim-trial-button">
+              Claim your free trial
+            </button>
+
+            <p class="terms-of-services-warning">
+              By clicking the button, you are agreeing to our&nbsp;
+              <span> Terms and Services </span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

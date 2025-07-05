@@ -1,0 +1,162 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+
+  --dark-grayish-red: hsl(0, 6%, 24%);
+
+  --font-size: 16px;
+  --font-weight300: 300;
+  --font-weight400: 400;
+  --font-weight600: 600;
+
+  --font-family: "Josefin Sans", sans-serif;
+
+  --bg-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  /* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+  /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight400);
+  background: var(--bg-gradient);
+  color: var(--desaturated-red);
+}
+
+main {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  align-items: flex-start;
+  position: relative;
+}
+.logo {
+  padding-left: 2.5rem;
+}
+.hero-image-mobile {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-container {
+  text-align: center;
+  padding: 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-text {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.hero-text h1 {
+  font-weight: var(--font-weight300);
+  margin: 0;
+}
+
+#highlight {
+  color: var(--dark-grayish-red);
+  font-weight: 600;
+}
+
+.hero-paragraph {
+  line-height: 145%;
+}
+
+/*  FYI input has been reset in reset.css */
+.email-input-container {
+  padding: 3rem 0rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.email-input {
+  flex: 1;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 3rem 0 0 3rem;
+  border-right: 0;
+  border-right: 1px solid transparent;
+  text-align: left;
+  caret-color: var(--soft-red);
+  position: relative;
+}
+
+.email-input::placeholder {
+  color: var(--desaturated-red);
+  text-align: left;
+}
+.email-input-container.error::before,
+.email-input-container.error::after,
+.email-input-container.valid::after {
+  display: block;
+}
+
+.email-input-container::before,
+.email-input-container::after {
+  display: none;
+}
+
+.email-input-container.error::before {
+  position: absolute;
+  top: 4.3rem;
+  right: 9rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url("../assets/images/icon-error.svg");
+  background-size: contain;
+  content: "";
+}
+
+.email-input-container.error::after {
+  position: absolute;
+  content: "Please provide a valid email";
+  color: var(--soft-red);
+  bottom: 0;
+  left: 2.5rem;
+  font-size: 1.4rem;
+}
+.email-input-container.valid::after {
+  display: block;
+  position: absolute;
+  content: "Email recorded successfully";
+  color: green;
+  top: 0;
+  left: 25%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.submit-btn {
+  border-right: 1px solid var(--desaturated-red);
+  border-radius: 3rem;
+  margin-left: -2.5rem;
+  padding: 1.5rem 3.5rem;
+  background: linear-gradient(135deg, hsl(0, 74%, 74%));
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, hsl(0, 80%, 86%));
+}
+
+.hero-image-desktop {
+  display: none;
+}
+
+.desktop-logo-and-content-wrapper {
+  display: none;
+}

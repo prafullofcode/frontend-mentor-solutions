@@ -1,0 +1,26 @@
+@media screen and (max-width: 600px) {
+  
+    html{
+        font-size: 8px;
+    }
+    .container{
+        max-width: 35rem;
+        margin-top: 5rem;
+        display: block;
+    }
+    figure{
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: inherit;
+        min-height: 25rem;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    .product-image{
+        display: none;
+    }
+
+    .content-wrapper{
+        padding: 2.5rem;
+    }
+  }

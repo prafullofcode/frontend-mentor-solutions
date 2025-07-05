@@ -1,0 +1,23 @@
+@media screen and (max-width: 900px) {
+ 
+    main{
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
+@media screen and (max-width: 480px) {
+ 
+    html{
+        font-size: 8px;
+    }
+    main{
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+   
+    .container{
+        max-width: 35rem;
+    }
+
+    .content-wrapper{
+        padding: 2rem;
+    }
+  }

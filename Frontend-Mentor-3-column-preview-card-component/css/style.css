@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--transparent-white: hsla(0, 0%, 100%, 0.75);  /* for the paragraphs */
+--very-light-gray : hsl(0, 0%, 95%) /* (background, headings, buttons) */
+}
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.big-shoulders-display-<uniquifier> {
+  font-family: "Big Shoulders Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.lexend-deca-<uniquifier> {
+  font-family: "Lexend Deca", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+}
+
+main{
+    width: 100vw;
+    min-height:100vh ;
+    background-color: var(--very-light-gray) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 92rem;
+    display: flex;
+    margin: 2rem 2.5rem ;
+}
+
+.container-items{
+    padding: 4.5rem;
+}
+
+.vehicle-svg{
+    margin-bottom: 4rem;
+}
+
+.vehicle-name {
+    font-size:2.5rem ;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", serif;
+}
+
+.vehicle-description{
+    margin-top: 3rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--transparent-white);
+    margin-bottom: 8rem;
+}
+
+.button{
+    border-radius: 2rem;
+    max-width: 14.5rem;
+    padding: 1.2rem 3rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+    border: 1px solid var(--very-light-gray);
+    transition: all 0.3s;
+}
+
+.container-items-1{
+    background-color: var(--bright-orange);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.container-items-1 .button{
+    color: var(--bright-orange);
+}
+
+.container-items-2{
+    background-color: var(--dark-cyan);
+}
+.container-items-2 .button{
+    color: var(--dark-cyan);
+}
+
+.container-items-3{
+    background-color: var(--very-dark-cyan);
+    border-radius:0 1rem 1rem 0;
+}
+
+.container-items-3 .button{
+    color: var(--very-dark-cyan);
+}
+
+
+.button:hover{
+    background-color: inherit;
+    color: var(--very-light-gray);
+}
+

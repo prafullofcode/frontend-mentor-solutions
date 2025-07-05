@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--white : hsl(0, 0%, 100%);
+--stone_100:hsl(30, 54%, 90%);
+--stone_150:hsl(30, 18%, 87%);
+--stone_600: hsl(30, 10%, 34%);
+--stone_900:hsl(24, 5%, 18%);
+--brown_800:hsl(14, 45%, 36%);
+--rose_800:hsl(332, 51%, 32%);
+--primary-font:"Young Serif", serif;
+--secondary-font:"Outfit",serif;
+
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Outfit", serif;
+    background:var(--stone_100) ;
+}
+
+main{
+    max-width: 750px;
+    margin: 4rem auto ;
+    background: var(--white);
+    border-radius: 0.8rem;
+}
+
+.content-wrapper{
+    padding: 0rem 2.5rem 2.5rem 2.5rem;
+}
+
+figure{
+    padding: 2.5rem;
+}
+
+header{
+width: 100%;
+}
+.top-image{
+width: 100%;
+border-radius: 0.8rem;
+}
+
+h1{
+    margin: 1rem 0rem;
+    font-weight: 400;
+    font-family: "Young Serif", serif;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--stone_600);
+}
+
+.prep-time{
+    margin: 1.5rem 0rem;
+    background-color:hwb(332 16% 52% / 0.08) ;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+
+}
+.prep-time-title{
+    color: var(--rose_800);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+ul,ol{
+    color: var(--stone_600);
+    margin: 0.5rem 1.5rem;
+}
+
+ul li,ol li{
+    padding: 0.5rem 0.8rem;
+}
+
+ul li::marker,ol li::marker{
+    font-size: 0.8rem;
+    color: var(--rose_800);
+}
+
+ol li::marker{
+    color: var(--brown_800);
+    font-weight: 700;
+}
+
+.list-title{
+    font-weight: 600;
+}
+
+h2{
+    color: var(--brown_800);
+    font-family: "Young Serif";
+    margin-bottom:1rem ;
+    font-weight: 800;
+}
+
+table{
+    margin-top: 1rem;
+    width: 100%;
+
+}
+
+td{
+    border-bottom: 1px solid var(--stone_100);
+    padding: 0.5rem;
+}
+tr td:first-child{
+ padding-left: 2rem;
+}
+tr:last-child td{
+    border-bottom: 0;
+}
+.nutrition-title{
+    color: var(--stone_600);
+}
+
+.nutrition-value{
+    font-weight: 600;
+    color:var(--brown_800);
+}
+
+.section-separator{
+    border-top: 1px solid var(--stone_150);
+    margin: 2rem 0rem;
+}
