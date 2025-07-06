@@ -5,136 +5,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor Projects</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
     />
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         font-family: "Inter", sans-serif;
-        margin: 0;
-        padding: 2rem;
-        background: #f4f4f8;
-        color: #333;
+        background: linear-gradient(135deg, #dce4eb, #a9b7c0);
+        color: #2d3b44;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 3rem;
       }
 
       h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
         text-align: center;
-        margin-bottom: 2rem;
+        color: #1a2536;
       }
 
       .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
       }
 
-      .card {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 1.25rem 1rem;
-        transition: transform 0.2s ease;
+      a.card {
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
-      .card:hover {
-        transform: translateY(-5px);
+      a.card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
       }
 
-      .card a {
-        text-decoration: none;
-        color: #0066cc;
+      a.card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .card-content {
+        padding: 2rem;
+        text-align: center;
+        flex-grow: 1;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.9) 0%,
+          #f8f8f8 100%
+        );
+      }
+
+      .card-content span {
+        display: block;
+        font-size: 1.2rem;
+        color: #3a4750;
         font-weight: 600;
+        margin-top: 1rem;
+        transition: color 0.3s ease;
       }
 
-      .card a:hover {
+      .card-content span:hover {
+        color: #0066cc;
         text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+
+      /* Hover Effects */
+      a.card:hover img {
+        filter: brightness(0.85);
       }
     </style>
   </head>
   <body>
     <h1>Frontend Mentor Projects</h1>
     <div class="grid">
-      <div class="card">
-        <a href="front-end-mentor-result-summary-component/index.html"
-          >Result Summary Component</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-3-column-preview-card-component/index.html"
-          >3 Column Preview Card</a
-        >
-      </div>
-      <div class="card">
-        <a href="frontend-mentor-base-apparel-coming-soon-page/index.html"
-          >Base Apparel Coming Soon</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-Blog-Preview-Card/index.html"
-          >Blog Preview Card</a
-        >
-      </div>
-      <div class="card">
-        <a href="frontend-mentor-FAQ-accordion/index.html">FAQ Accordion</a>
-      </div>
-      <div class="card">
-        <a href="frontend-mentor-four-card-feature-section/index.html"
-          >Four Card Feature Section</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-NFT-preview-card-component/index.html"
-          >NFT Preview Card</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-Order-Summary-Component/index.html"
-          >Order Summary Component</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-Product-Preview-Card-Component/index.html"
-          >Product Preview Card</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-Profile-Card-Component/index.html"
-          >Profile Card Component</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-QR-Code-Component/index.html"
-          >QR Code Component</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-Recipe-page/index.html">Recipe Page</a>
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-Social-Links-profile/index.html"
-          >Social Links Profile</a
-        >
-      </div>
-      <div class="card">
-        <a href="Frontend-Mentor-stats-preview-card-component/index.html"
-          >Stats Preview Card</a
-        >
-      </div>
-      <div class="card">
-        <a href="frontendmentor-article-preview-component/index.html"
-          >Article Preview Component</a
-        >
-      </div>
-      <div class="card">
-        <a href="interactive-rating-component/index.html"
-          >Interactive Rating Component</a
-        >
-      </div>
-      <div class="card">
-        <a href="intro-component-with-signup-form/index.html"
-          >Intro Component with Signup Form</a
-        >
-      </div>
+      <a
+        href="front-end-mentor-result-summary-component/index.html"
+        class="card"
+      >
+        <img
+          src="front-end-mentor-result-summary-component/design/desktop-design.jpg"
+          alt="Result Summary Component"
+        />
+        <div class="card-content">
+          <span>Result Summary Component</span>
+        </div>
+      </a>
+      <a
+        href="Frontend-Mentor-3-column-preview-card-component/index.html"
+        class="card"
+      >
+        <img
+          src="Frontend-Mentor-3-column-preview-card-component/design/desktop-design.jpg"
+          alt="3 Column Preview Card"
+        />
+        <div class="card-content">
+          <span>3 Column Preview Card</span>
+        </div>
+      </a>
+      <a
+        href="frontend-mentor-base-apparel-coming-soon-page/index.html"
+        class="card"
+      >
+        <img
+          src="frontend-mentor-base-apparel-coming-soon-page/design/desktop-design.jpg"
+          alt="Base Apparel Coming Soon"
+        />
+        <div class="card-content">
+          <span>Base Apparel Coming Soon</span>
+        </div>
+      </a>
+      <a href="Frontend-Mentor-Blog-Preview-Card/index.html" class="card">
+        <img
+          src="Frontend-Mentor-Blog-Preview-Card/design/desktop-design.jpg"
+          alt="Blog Preview Card"
+        />
+        <div class="card-content">
+          <span>Blog Preview Card</span>
+        </div>
+      </a>
+      <a href="frontend-mentor-FAQ-accordion/index.html" class="card">
+        <img
+          src="frontend-mentor-FAQ-accordion/design/desktop-design.jpg"
+          alt="FAQ Accordion"
+        />
+        <div class="card-content">
+          <span>FAQ Accordion</span>
+        </div>
+      </a>
+      <a
+        href="frontend-mentor-four-card-feature-section/index.html"
+        class="card"
+      >
+        <img
+          src="frontend-mentor-four-card-feature-section/design/desktop-design.jpg"
+          alt="Four Card Feature Section"
+        />
+        <div class="card-content">
+          <span>Four Card Feature Section</span>
+        </div>
+      </a>
+      <a
+        href="Frontend-Mentor-NFT-preview-card-component/index.html"
+        class="card"
+      >
+        <img
+          src="Frontend-Mentor-NFT-preview-card-component/design/desktop-design.jpg"
+          alt="NFT Preview Card"
+        />
+        <div class="card-content">
+          <span>NFT Preview Card</span>
+        </div>
+      </a>
+      <a href="Frontend-Mentor-Order-Summary-Component/index.html" class="card">
+        <img
+          src="Frontend-Mentor-Order-Summary-Component/design/desktop-design.jpg"
+          alt="Order Summary Component"
+        />
+        <div class="card-content">
+          <span>Order Summary Component</span>
+        </div>
+      </a>
+      <a
+        href="Frontend-Mentor-Product-Preview-Card-Component/index.html"
+        class="card"
+      >
+        <img
+          src="Frontend-Mentor-Product-Preview-Card-Component/design/desktop-design.jpg"
+          alt="Product Preview Card"
+        />
+        <div class="card-content">
+          <span>Product Preview Card</span>
+        </div>
+      </a>
+      <a href="Frontend-Mentor-Profile-Card-Component/index.html" class="card">
+        <img
+          src="Frontend-Mentor-Profile-Card-Component/design/desktop-design.jpg"
+          alt="Profile Card Component"
+        />
+        <div class="card-content">
+          <span>Profile Card Component</span>
+        </div>
+      </a>
+      <a href="Frontend-Mentor-QR-Code-Component/index.html" class="card">
+        <img
+          src="Frontend-Mentor-QR-Code-Component/design/desktop-design.jpg"
+          alt="QR Code Component"
+        />
+        <div class="card-content">
+          <span>QR Code Component</span>
+        </div>
+      </a>
+      <a href="Frontend-Mentor-Recipe-page/index.html" class="card">
+        <img
+          src="Frontend-Mentor-Recipe-page/design/desktop-design.jpg"
+          alt="Recipe Page"
+        />
+        <div class="card-content">
+          <span>Recipe Page</span>
+        </div>
+      </a>
+      <a href="Frontend-Mentor-Social-Links-profile/index.html" class="card">
+        <img
+          src="Frontend-Mentor-Social-Links-profile/design/destkop-design.jpg"
+          alt="Social Links Profile"
+        />
+        <div class="card-content">
+          <span>Social Links Profile</span>
+        </div>
+      </a>
+      <a
+        href="Frontend-Mentor-stats-preview-card-component/index.html"
+        class="card"
+      >
+        <img
+          src="Frontend-Mentor-stats-preview-card-component/design/desktop-design.jpg"
+          alt="Stats Preview Card"
+        />
+        <div class="card-content">
+          <span>Stats Preview Card</span>
+        </div>
+      </a>
+      <a
+        href="frontendmentor-article-preview-component/index.html"
+        class="card"
+      >
+        <img
+          src="frontendmentor-article-preview-component/design/desktop-design.jpg"
+          alt="Article Preview Component"
+        />
+        <div class="card-content">
+          <span>Article Preview Component</span>
+        </div>
+      </a>
+      <a href="interactive-rating-component/index.html" class="card">
+        <img
+          src="interactive-rating-component/design/desktop-design.jpg"
+          alt="Interactive Rating Component"
+        />
+        <div class="card-content">
+          <span>Interactive Rating Component</span>
+        </div>
+      </a>
+      <a href="intro-component-with-signup-form/index.html" class="card">
+        <img
+          src="intro-component-with-signup-form/design/desktop-design.jpg"
+          alt="Intro Component with Signup Form"
+        />
+        <div class="card-content">
+          <span>Intro Component with Signup Form</span>
+        </div>
+      </a>
+      <a href="ping-coming-soon-page-master/index.html" class="card">
+        <img
+          src="ping-coming-soon-page-master/design/desktop-design.jpg"
+          alt="Ping Coming Soon Page"
+        />
+        <div class="card-content">
+          <span>Ping Coming Soon Page</span>
+        </div>
+      </a>
     </div>
   </body>
 </html>
