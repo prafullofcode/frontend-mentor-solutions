@@ -89,6 +89,11 @@
       "name": "ping-coming-soon-page-master",
       "title": "Ping Coming Soon Page",
       "screenshot": "/design/desktop-design.jpg"
+    },
+    {
+      "name": "huddle-landing-page-with-single-introductory-section-master",
+      "title": "Huddle Landing Page",
+      "screenshot": "/design/desktop-design.jpg"
     }
   ]
 }
