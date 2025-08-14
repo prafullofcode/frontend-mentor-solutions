@@ -96,9 +96,9 @@
       "screenshot": "/design/desktop-design.jpg"
     },
     {
-      "name": "browswer-extension-manager",
+      "name": "browser-extension-manager",
       "title": "Browser Extension Manager",
-      "screenshot": "/design/desktop-design.jpg"
+      "screenshot": "/design/desktop-dark.jpg"
     }
   ]
 }
