@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--neutral-0);
+  border-radius: 15px;
+}
+
+.toggle-mode-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  background: var(--neutral-100);
+}
+
+.toggle-mode-button:hover {
+  background: var(--neutral-300);
+}

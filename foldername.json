@@ -94,6 +94,11 @@
       "name": "huddle-landing-page",
       "title": "Huddle Landing Page",
       "screenshot": "/design/desktop-design.jpg"
+    },
+    {
+      "name": "browswer-extension-manager",
+      "title": "Browser Extension Manager",
+      "screenshot": "/design/desktop-design.jpg"
     }
   ]
 }

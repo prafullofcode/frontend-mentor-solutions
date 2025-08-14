@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Browser extensions manager UI</title>
+  </head>
+  <body>
+    <header class="header wrapper">
+      <a href="#">
+        <img
+          src="./assets/images/logo.svg"
+          alt="Logo"
+          class="logo"
+          height="41"
+          width="179"
+        />
+      </a>
+      <button class="toggle-mode-button focus">
+        <img src="./assets/images/icon-moon.svg" alt="toggle-light-mode" />
+      </button>
+    </header>
+    <main class="main wrapper">
+      <div class="main__header">
+        <h2>Extensions list</h2>
+        <div class="main__buttons">
+          <button class="button focus active" onclick="loadData()"">All</button>
+          <button class="button focus" onclick="loadActive()">Active</button>
+          <button class="button focus" onclick="loadInactive()">
+            Inactive
+          </button>
+        </div>
+      </div>
+      <div class="blocks-container" id="blocks-container"></div>
+    </main>
+    <script src="./js/load.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

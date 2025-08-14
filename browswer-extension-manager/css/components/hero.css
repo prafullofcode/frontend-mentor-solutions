@@ -1,0 +1,92 @@
+.blocks-container {
+  display: grid;
+  row-gap: 14px;
+  column-gap: 12px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--neutral-0);
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+}
+
+.block-top {
+  display: flex;
+  gap: 1rem;
+}
+
+.block__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.block__text p {
+  max-width: 35ch;
+}
+
+.block-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extension-toggle {
+  background-color: var(--neutral-300);
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  padding: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.circle {
+  background-color: white;
+  width: 45%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+.extension-toggle.active {
+  justify-content: flex-end;
+  background-color: var(--red-700);
+}
+
+.extension-toggle:hover {
+  cursor: pointer;
+}
+
+.remove-button {
+  outline: 1px solid var(--neutral-300);
+  border-radius: 15px;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.remove-button:hover {
+  outline: none;
+  background-color: var(--red-700);
+  color: var(--neutral-0);
+  cursor: pointer;
+}
+
+@media (width >= 48em) {
+  .block {
+    gap: 2.5rem;
+  }
+  .blocks-container {
+    display: grid;
+    row-gap: 14px;
+    column-gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

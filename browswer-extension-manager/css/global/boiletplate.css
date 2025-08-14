@@ -1,0 +1,54 @@
+:root {
+  /* Neutrals */
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: rgb(199, 199, 199);
+  --neutral-200: rgb(214, 226, 245);
+  --neutral-100: rgb(237, 237, 237);
+  --neutral-0: hsl(200, 60%, 99%);
+
+  /* Reds */
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-700: hsl(3, 77%, 44%);
+
+  /* Gradients */
+  --gradient-light: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --gradient-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  /* Typography */
+  --font-family-sans: "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-body: 16px; /* Paragraph */
+}
+html {
+  font-size: 16px;
+}
+main {
+}
+body {
+  background-color: var(--neutral-200);
+  font-weight: 500;
+  padding: 2.5rem 0.9375rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+p {
+  line-height: 150%;
+  max-width: 35ch;
+}
+
+.focus:focus {
+  outline: 1px solid var(--red-500);
+}

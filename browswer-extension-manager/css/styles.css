@@ -1,0 +1,7 @@
+@import url(./global/normalize.css);
+@import url(./global/reset.css);
+@import url(./global/boiletplate.css);
+@import url(./global/layout.css);
+@import url(./components/header.css);
+@import url(./components/main.css);
+@import url(./components/hero.css);
