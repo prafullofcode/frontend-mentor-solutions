@@ -27,6 +27,10 @@
   opacity: 50%;
 }
 
+.main__buttons .button.active:hover {
+  opacity: 100%;
+}
+
 @media (width <= 48em) {
   .main__header {
     flex-direction: column;

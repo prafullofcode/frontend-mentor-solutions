@@ -4,7 +4,6 @@
   column-gap: 12px;
   grid-template-columns: repeat(1, 1fr);
 }
-
 .block {
   display: flex;
   flex-direction: column;
@@ -14,30 +13,25 @@
   border-radius: 1rem;
   gap: 1.5rem;
 }
-
 .block-top {
   display: flex;
   gap: 1rem;
 }
-
 .block__text {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-
 .block__text p {
   max-width: 35ch;
 }
-
 .block-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .extension-toggle {
-  background-color: var(--neutral-300);
+  background: var(--neutral-300);
   width: 40px;
   height: 20px;
   border-radius: 15px;
@@ -46,25 +40,25 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  transition: background-color 0.3s ease;
+  transition: 300ms ease-in-out;
+  transition-property: background, transform;
 }
-
 .circle {
   background-color: white;
   width: 45%;
   height: 100%;
   border-radius: 15px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 .extension-toggle.active {
-  justify-content: flex-end;
-  background-color: var(--red-700);
+  background: var(--red-700);
 }
-
+.extension-toggle.active .circle {
+  transform: translateX(120%);
+}
 .extension-toggle:hover {
   cursor: pointer;
 }
-
 .remove-button {
   outline: 1px solid var(--neutral-300);
   border-radius: 15px;
@@ -78,7 +72,6 @@
   color: var(--neutral-0);
   cursor: pointer;
 }
-
 @media (width >= 48em) {
   .block {
     gap: 2.5rem;
