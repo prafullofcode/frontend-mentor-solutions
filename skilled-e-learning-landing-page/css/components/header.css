@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 1;
+}
+
+.logo {
+  width: 4.955625rem;
+}
+
+@media (width >= 50.625em) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (width >= 75em) {
+  .logo {
+    width: 6.9375rem;
+  }
+}

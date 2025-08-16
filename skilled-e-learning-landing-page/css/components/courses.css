@@ -1,0 +1,76 @@
+.courses {
+  /* background: linear-gradient(#fff, #f0f0f0 20%); */
+}
+
+.courses .wrapper {
+  display: grid;
+  row-gap: 60px;
+}
+
+.block {
+  padding: 64px 32px 40px;
+  border-radius: 15px;
+}
+
+.courses .course {
+  background-color: var(--color-white);
+  display: flex;
+
+  position: relative;
+  display: grid;
+  gap: 24px;
+}
+
+.courses .block.title {
+  background: var(--gradient-pink);
+  color: var(--color-white);
+  padding: 32px;
+}
+
+.courses h2 {
+  font-size: var(--fs-3);
+}
+
+.courses img {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  translate: 0% -50%;
+}
+.courses h3 {
+  font-size: var(--fs-4);
+}
+
+.courses p {
+  font-size: var(--fs-5);
+  font-weight: 300;
+  margin: 0;
+}
+
+.courses a {
+  bottom: 0;
+  font-size: var(--fs-7);
+  font-weight: 700;
+  color: var(--color-pink-600);
+  transition: opacity 150ms ease-in-out;
+  align-self: end;
+}
+
+.courses a:hover {
+  opacity: 50%;
+}
+
+@media (width >=50.625rem) {
+  .courses .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+}
+
+@media (width >=75rem) {
+  .courses .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 84px;
+  }
+}

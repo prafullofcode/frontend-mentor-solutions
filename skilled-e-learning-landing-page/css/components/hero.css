@@ -1,0 +1,51 @@
+.hero {
+  display: grid;
+  row-gap: 3rem;
+  padding-block: 64px;
+  z-index: 1;
+}
+
+.hero picture {
+  max-width: 37.5rem;
+  justify-self: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (width >= 50.625em) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+  .hero__text-container {
+    padding-block: 42px;
+  }
+  .hero picture {
+    max-width: 50rem;
+    position: absolute;
+    right: 0;
+    translate: 42% -24%;
+    z-index: -1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (width >= 75em) {
+  .hero picture {
+    max-width: 1040px;
+    translate: 47% -27%;
+  }
+  .hero__text-container {
+    padding-block: 6.875rem;
+  }
+}
+
+.hero h1 {
+  font-size: var(--fs-1);
+  color: var(--color-blue-900);
+}
+
+.hero p {
+  margin-block: 24px 40px; /* !Top bottom margin ho hai yo*/
+}
