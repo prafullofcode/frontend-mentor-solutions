@@ -99,6 +99,11 @@
       "name": "browser-extension-manager",
       "title": "Browser Extension Manager",
       "screenshot": "/design/desktop-design-dark.jpg"
+    },
+    {
+      "name": "skilled-e-learning-landing-page",
+      "title": "Skilled Learning Landing Page",
+      "screenshot": "/design/desktop-design.jpg"
     }
   ]
 }
