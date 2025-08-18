@@ -13,6 +13,11 @@
   border-radius: 1rem;
   gap: 1.5rem;
 }
+
+.block.dark {
+  background-color: var(--neutral-700);
+  color: white;
+}
 .block-top {
   display: flex;
   gap: 1rem;
@@ -24,7 +29,13 @@
 }
 .block__text p {
   max-width: 35ch;
+  color: var(--neutral-600);
 }
+
+.block__text p.dark {
+  color: var(--neutral-300);
+}
+
 .block-bottom {
   display: flex;
   justify-content: space-between;
@@ -65,6 +76,10 @@
   padding: 0.5rem 0.8rem;
   transition: color 0.2s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+}
+
+.remove-button.dark {
+  outline: 1px solid var(--neutral-600);
 }
 .remove-button:hover {
   outline: none;

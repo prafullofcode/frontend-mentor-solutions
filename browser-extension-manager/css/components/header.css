@@ -7,16 +7,51 @@
   border-radius: 15px;
 }
 
-.toggle-mode-button {
+.header.dark {
+  background-color: var(--neutral-700);
+}
+
+.header a {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+}
+.header h1 {
+  display: none;
+}
+
+header h1.dark {
+  display: inline-block;
+  background: var(--neutral-700);
+  z-index: 1;
+  position: absolute;
+  color: white;
+  width: 75%;
+  top: -50%;
+  left: 30%;
+}
+
+.logo.dark {
+  width: 20%;
+}
+.toggle-mode-button {
   height: 50px;
   width: 50px;
   border-radius: 15px;
   background: var(--neutral-100);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/images/icon-moon.svg);
+}
+
+.toggle-mode-button.dark {
+  background-color: var(--neutral-600);
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/icon-sun.svg);
 }
 
 .toggle-mode-button:hover {
-  background: var(--neutral-300);
+  opacity: 50%;
+}
+.toggle-mode-button.dark:hover {
+  opacity: 50%;
 }

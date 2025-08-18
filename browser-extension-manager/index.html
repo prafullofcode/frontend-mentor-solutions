@@ -12,35 +12,40 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Browser extensions manager UI</title>
   </head>
-  <body>
-    <header class="header wrapper">
+  <body class="body darken">
+    <header class="header wrapper darken">
       <a href="#">
         <img
           src="./assets/images/logo.svg"
           alt="Logo"
-          class="logo"
+          class="log darken"
           height="41"
           width="179"
         />
+        <h1 class="darken">Extensions</h1>
       </a>
-      <button class="toggle-mode-button focus">
-        <img src="./assets/images/icon-moon.svg" alt="toggle-light-mode" />
-      </button>
+      <button class="toggle-mode-button focus darken"></button>
     </header>
     <main class="main wrapper">
       <div class="main__header">
-        <h2>Extensions list</h2>
+        <h2 class="darken">Extensions list</h2>
         <div class="main__buttons">
-          <button class="button focus active button_hero" onclick="loadData()">
+          <button
+            class="button focus active button_hero darken"
+            onclick="loadData()"
+          >
             All
           </button>
-          <button class="button focus button_hero">Active</button>
-          <button class="button focus button_hero">Inactive</button>
+          <button class="button focus button_hero darken">Active</button>
+          <button class="button focus button_hero darken">Inactive</button>
         </div>
       </div>
       <div class="blocks-container" id="blocks-container"></div>
     </main>
+
     <script src="./js/load.js"></script>
+
     <script src="./js/script.js"></script>
+    <script src="./js/darkmode.js"></script>
   </body>
 </html>

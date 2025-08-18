@@ -8,7 +8,7 @@ function loadData() {
       json.extensions.forEach((extension) => {
         const active = extension.isActive ? "active" : " ";
         container.innerHTML += `
-              <div class="block">
+              <div class="block darken">
                 <div class="block-top">
                   <img
                     src="${extension.logo}"
@@ -19,37 +19,19 @@ function loadData() {
                   />
                   <div class="block__text">
                     <h3 class = "extension-name">${extension.name}</h3>
-                    <p>${extension.description}</p>
+                    <p class="darken">${extension.description}</p>
                   </div>
                 </div>
                 <div class="block-bottom">
-                  <div class="remove-button">Remove</div>
+                  <div class="remove-button darken">Remove</div>
                   <div class="extension-toggle ${active}" onclick="toggle(this); changeData(this)">
                     <div class="circle"></div>
                   </div>
                 </div>
               </div>
             `;
-      });
-    });
-}
-
-function changeData(element) {
-  fetch("data.json")
-    .then((response) => response.json())
-    .then((json) => {
-      let container = document.getElementById("blocks-container");
-      const block = element.closest(".block");
-      const h3 = block.querySelector("h3");
-
-      json.extensions.forEach((extension) => {
-        if (extension.name == h3.textContent.trim()) {
-          if (element.classList.contains("active")) {
-            extension.isActive = true;
-          } else {
-            extension.isActive = false;
-          }
-          console.log(`${extension.name} is now ${extension.isActive} `);
+        if (darkToggle == true) {
+          darken();
         }
       });
     });
@@ -62,6 +44,7 @@ function removeData() {
 
 function loadActive() {
   removeData();
+
   fetch("data.json")
     .then((response) => response.json())
     .then((json) => {
@@ -72,6 +55,9 @@ function loadActive() {
           changeInnerHtml(container, extension, "active");
         }
       });
+      if (darkToggle) {
+        darken();
+      }
     });
 }
 
@@ -87,12 +73,15 @@ function loadInactive() {
           changeInnerHtml(container, extension, " ");
         }
       });
+      if (darkToggle) {
+        darken();
+      }
     });
 }
 
 function changeInnerHtml(container, extension, mode) {
   container.innerHTML += `
-              <div class="block">
+              <div class="block darken">
                 <div class="block-top">
                   <img
                     src="${extension.logo}"
@@ -103,11 +92,11 @@ function changeInnerHtml(container, extension, mode) {
                   />
                   <div class="block__text">
                     <h3 class = "extension-name">${extension.name}</h3>
-                    <p>${extension.description}</p>
+                    <p class  = "darken">${extension.description}</p>
                   </div>
                 </div>
                 <div class="block-bottom">
-                  <div class="remove-button">Remove</div>
+                  <div class="remove-button darken">Remove</div>
                   <div class="extension-toggle ${mode}" onclick="toggle(this);">
                     <div class="circle"></div>
                   </div>

@@ -32,9 +32,16 @@ html {
 main {
 }
 body {
+  min-height: 100vh;
+  max-width: 100vw;
   background-color: var(--neutral-200);
   font-weight: 500;
   padding: 2.5rem 0.9375rem;
+}
+
+.body.dark {
+  background-size: cover;
+  background-image: linear-gradient(180deg, #040918, #091540);
 }
 
 h1,
@@ -50,5 +57,10 @@ p {
 }
 
 .focus:focus {
-  outline: 1px solid var(--red-500);
+  outline: 2px solid var(--red-500);
+}
+
+.focus.dark:focus {
+  border: none;
+  outline: 2px solid var(--red-500);
 }
