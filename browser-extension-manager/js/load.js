@@ -23,7 +23,7 @@ function loadData() {
                   </div>
                 </div>
                 <div class="block-bottom">
-                  <div class="remove-button darken">Remove</div>
+                  <a href= "#popup1"><div class="remove-button darken">Remove</div></a>
                   <div class="extension-toggle ${active}" onclick="toggle(this); changeData(this)">
                     <div class="circle"></div>
                   </div>
@@ -96,7 +96,7 @@ function changeInnerHtml(container, extension, mode) {
                   </div>
                 </div>
                 <div class="block-bottom">
-                  <div class="remove-button darken">Remove</div>
+              <a href= "#popup1"><div class="remove-button darken">Remove</div></a>
                   <div class="extension-toggle ${mode}" onclick="toggle(this);">
                     <div class="circle"></div>
                   </div>
