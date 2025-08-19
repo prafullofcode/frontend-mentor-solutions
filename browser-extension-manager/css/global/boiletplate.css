@@ -56,11 +56,11 @@ p {
   max-width: 35ch;
 }
 
-.focus:focus {
+.focus:focus-visible {
   outline: 2px solid var(--red-500);
 }
 
-.focus.dark:focus {
+.focus.dark:focus-visible {
   border: none;
   outline: 2px solid var(--red-500);
 }

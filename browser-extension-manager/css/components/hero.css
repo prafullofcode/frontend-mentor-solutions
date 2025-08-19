@@ -21,6 +21,7 @@
 .block-top {
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 .block__text {
   display: flex;
@@ -28,7 +29,7 @@
   gap: 0.7rem;
 }
 .block__text p {
-  max-width: 35ch;
+  /* max-width: 35ch; */
   color: var(--neutral-600);
 }
 
@@ -87,6 +88,7 @@
   color: var(--neutral-0);
   cursor: pointer;
 }
+
 @media (width >= 48em) {
   .block {
     gap: 2.5rem;
@@ -95,6 +97,12 @@
     display: grid;
     row-gap: 14px;
     column-gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 65em) {
+  .blocks-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
