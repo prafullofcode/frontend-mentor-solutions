@@ -7,16 +7,15 @@
 .block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: var(--neutral-0);
+  justify-content: space-between;
+  background-color: var(--block-bg);
   padding: 1rem;
   border-radius: 1rem;
-  gap: 1.5rem;
+  color: var(--text-color);
 }
 
-.block.dark {
-  background-color: var(--neutral-700);
-  color: white;
+.block.none {
+  display: none;
 }
 .block-top {
   display: flex;
@@ -28,19 +27,12 @@
   flex-direction: column;
   gap: 0.7rem;
 }
-.block__text p {
-  /* max-width: 35ch; */
-  color: var(--neutral-600);
-}
-
-.block__text p.dark {
-  color: var(--neutral-300);
-}
 
 .block-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 .extension-toggle {
   background: var(--neutral-300);
@@ -53,14 +45,16 @@
   align-items: center;
   position: relative;
   transition: 300ms ease-in-out;
+  flex-shrink: 0;
   transition-property: background, transform;
 }
 .circle {
   background-color: white;
   width: 45%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 50%;
   transition: transform 300ms ease-in-out;
+  flex-shrink: 0;
 }
 .extension-toggle.active {
   background: var(--red-700);
@@ -75,13 +69,10 @@
   outline: 1px solid var(--neutral-300);
   border-radius: 15px;
   padding: 0.5rem 0.8rem;
-  transition: color 0.2s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  transition: color 0.1 ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.remove-button.dark {
-  outline: 1px solid var(--neutral-600);
-}
 .remove-button:hover {
   outline: none;
   background-color: var(--red-700);
@@ -102,7 +93,13 @@
 }
 
 @media (width >= 65em) {
+  .block {
+    height: 15rem;
+  }
   .blocks-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .block-bottom {
+    margin-top: 0rem;
   }
 }

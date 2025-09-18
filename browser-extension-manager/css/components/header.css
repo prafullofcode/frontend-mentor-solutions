@@ -1,51 +1,45 @@
+:root {
+  --background-color: var(--neutral-200);
+  --text-color: var(--neutral-900);
+  --button-bg: var(--neutral-0);
+  --button-text: var(--neutral-800);
+  --toggle-bg: var(--neutral-300);
+  --toggle-circle: var(--neutral-0);
+  --header-bg: var(--neutral-0);
+  --header-text: var(--neutral-900);
+  --remove-bg: var(--neutral-100);
+  --remove-hover-bg: var(--red-700);
+  --remove-hover-text: var(--neutral-0);
+}
 .header {
+  color: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  background-color: var(--neutral-0);
+  background-color: var(--header-bg);
   border-radius: 15px;
-}
-
-.header.dark {
-  background-color: var(--neutral-700);
 }
 
 .header a {
   display: flex;
   position: relative;
 }
-.header h1 {
-  display: none;
-}
 
-header h1.dark {
-  display: inline-block;
-  background: var(--neutral-700);
-  z-index: 1;
-  position: absolute;
-  color: white;
-  width: 75%;
-  top: -50%;
-  left: 30%;
-}
-
-.logo.dark {
-  width: 20%;
-}
 .toggle-mode-button {
   height: 50px;
   width: 50px;
   border-radius: 15px;
-  background: var(--neutral-100);
+  /* background-color: var(--toggle-bg); */
+  background-color: var(--r);
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../../assets/images/icon-moon.svg);
+  transition: background-color 0.3s ease;
 }
 
 .toggle-mode-button.dark {
-  background-color: var(--neutral-600);
-  background-repeat: no-repeat;
+  background-color: var(--button-bg);
   background-image: url(../../assets/images/icon-sun.svg);
 }
 

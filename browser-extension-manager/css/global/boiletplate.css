@@ -1,31 +1,39 @@
 :root {
-  /* Neutrals */
   --neutral-900: hsl(227, 75%, 14%);
   --neutral-800: hsl(226, 25%, 17%);
   --neutral-700: hsl(225, 23%, 24%);
   --neutral-600: hsl(226, 11%, 37%);
-  --neutral-300: rgb(199, 199, 199);
-  --neutral-200: rgb(214, 226, 245);
-  --neutral-100: rgb(237, 237, 237);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
   --neutral-0: hsl(200, 60%, 99%);
 
-  /* Reds */
   --red-400: hsl(3, 86%, 64%);
   --red-500: hsl(3, 71%, 56%);
   --red-700: hsl(3, 77%, 44%);
 
-  /* Gradients */
   --gradient-light: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   --gradient-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
 
-  /* Typography */
-  --font-family-sans: "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto,
-    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --font-size-body: 16px; /* Paragraph */
+  --background-color: var(--neutral-0);
+  --text-color: var(--neutral-900);
+  --block-bg: var(--neutral-0);
+
+  --header-bg: var(--neutral-0);
+
+  --fill-color: #091540;
 }
+
+.dark-mode {
+  --fill-color: #fff;
+
+  --background-color: var;
+  --block-bg: var(--neutral-700);
+  --text-color: var(--neutral-200);
+  --button-bg: var(--neutral-600);
+  --header-bg: var(--neutral-700);
+}
+
 html {
   font-size: 16px;
 }
@@ -34,16 +42,16 @@ main {
 body {
   min-height: 100vh;
   max-width: 100vw;
-  background-color: var(--neutral-200);
+  background-image: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   font-weight: 500;
   padding: 2.5rem 0.9375rem;
 }
 
-.body.dark {
+body.dark {
+  background-color: transparent;
   background-size: cover;
   background-image: linear-gradient(180deg, #040918, #091540);
 }
-
 h1,
 h2,
 h3 {
@@ -57,10 +65,5 @@ p {
 }
 
 .focus:focus-visible {
-  outline: 2px solid var(--red-500);
-}
-
-.focus.dark:focus-visible {
-  border: none;
   outline: 2px solid var(--red-500);
 }
