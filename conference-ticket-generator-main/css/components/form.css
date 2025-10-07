@@ -1,0 +1,112 @@
+form {
+  max-width: 40rem;
+  padding: 0rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  height: 55px;
+  width: 100%;
+  margin: 0.75rem 0rem;
+  padding: 0rem 0.8rem;
+  border-radius: 15px;
+  background-color: var(--neutral-bg);
+  outline: 1px solid var(--neutral-500);
+  transition: 0.2s ease-in-out;
+  transition-property: background-color;
+  position: relative;
+}
+
+/* .input__fname:hover,
+.input__email:hover,
+.input__git_username:hover  */
+.input:hover {
+  cursor: pointer;
+  background-color: var(--neutral-700);
+}
+
+.big-element:has(p:hover):hover {
+  background: none;
+}
+.file-upload-container {
+  outline: 1px dashed var(--neutral-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  gap: 1rem;
+}
+
+.file-upload-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-icon {
+  outline: 1px solid var(--neutral-500);
+  padding: 0.3rem;
+  border-radius: 10px;
+  background-color: var(--icon-bg);
+}
+.file-upload-container p {
+  color: var(--neutral-300);
+}
+
+.generate-button {
+  margin-top: 1.25rem;
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 800;
+  background-color: var(--orange-500);
+  transition: 0.2s ease-in-out;
+  transition-property: background-color;
+}
+
+.generate-button:hover {
+  background-color: var(--orange-700);
+}
+
+.labels {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.input__file {
+  position: absolute;
+  width: 95%;
+  height: 125px;
+  opacity: 0;
+}
+
+#img-view {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#img-control-buttons {
+  width: 100%;
+  text-align: center;
+}
+
+#img-control-buttons p {
+  display: inline-block;
+  color: var(--neutral-500);
+  padding: 0.3rem;
+  background-color: var(--icon-bg);
+  transition: 0.3s ease-in-out;
+  transition-property: text-decoration, outline;
+}
+#img-control-buttons p:hover {
+  text-decoration: underline;
+  color: white;
+  outline: 1px solid var(--neutral-500);
+}

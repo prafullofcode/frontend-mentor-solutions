@@ -1,0 +1,7 @@
+@import url(../global/normalize.css);
+@import url(../global/reset.css);
+@import url(../global/font.css);
+@import url(../global/boilerplate.css);
+@import url(../global/layout.css);
+@import url(../components/form.css);
+@import url(../components/ticket.css);
